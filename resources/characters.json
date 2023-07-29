@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "characterType": "The Eccentric Inventor",
+        "description": "Always coming up with strange and wonderful inventions, often with unintended and humorous results."
+    },
+    {
+        "id": 2,
+        "characterType": "The Sassy Sidekick",
+        "description": "Always has a witty one-liner or a sarcastic comment ready to lighten the mood or add a bit of humor to the situation."
+    },
+    {
+        "id": 3,
+        "characterType": "The Clumsy Giant",
+        "description": "Big, friendly, and always unintentionally causing havoc with their size and lack of coordination."
+    },
+    {
+        "id": 4,
+        "characterType": "The Mischievous Imp",
+        "description": "Always up to no good, creating chaos and confusion wherever they go, but their charm and good intentions usually save the day."
+    },
+    {
+        "id": 5,
+        "characterType": "The Wise-cracking Animal Companion",
+        "description": "Provides comic relief and unexpected wisdom in their own unique style."
+    },
+    {
+        "id": 6,
+        "characterType": "The Curious Explorer",
+        "description": "Always in search of adventure, this character's insatiable curiosity leads them into all sorts of interesting situations."
+    },
+    {
+        "id": 7,
+        "characterType": "The Over-the-top Villain",
+        "description": "Flamboyantly evil and has grandiose plans for world domination, which are always humorously thwarted."
+    },
+    {
+        "id": 8,
+        "characterType": "The Fearless Leader",
+        "description": "Brave, resourceful, and always ready to save the day, often with a unique and creative solution."
+    },
+    {
+        "id": 9,
+        "characterType": "The Dreamy Space Cadet",
+        "description": "Constantly lost in their own world, and their imaginative daydreams lead to all sorts of fun adventures."
+    },
+    {
+        "id": 10,
+        "characterType": "The Unlikely Hero",
+        "description": "May seem ordinary or even a bit of a loser, but when the chips are down, they always manage to save the day in the most unexpected ways."
+    },
+    {
+        "id": 11,
+        "characterType": "The Grumpy Grouch",
+        "description": "Perpetually discontented, complaining about everything, and providing comedic frustration or sarcastic remarks. Despite their gruff exterior, they often have a heart of gold."
+    },
+    {
+        "id": 12,
+        "characterType": "The Cheerful Optimist",
+        "description": "Always upbeat and full of energy, this character's relentless positivity can brighten any situation. They have the ability to find joy in the simplest things, which often leads to interesting adventures."
+    },
+    {
+        "id": 13,
+        "characterType": "The Enthusiastic Novice",
+        "description": "Eager to learn and always diving headfirst into new hobbies or challenges, this character's enthusiasm often gets them into hilarious predicaments."
+    },
+    {
+        "id": 14,
+        "characterType": "The Nervous Nellie",
+        "description": "Always worrying and overthinking. Their anxiety often leads to comedic overreactions or slapstick mishaps."
+    },
+    {
+        "id": 15,
+        "characterType": "The Laid-back Loafer",
+        "description": "Takes life at their own slow pace, and never lets anything bother them. They often provide comic relief with their relaxed approach to even the most stressful situations."
+    },
+    {
+        "id": 16,
+        "characterType": "The Zealous Competitor",
+        "description": "Always trying to be the best at everything. Their competitive spirit and determination often lead to humorous situations when they take things too seriously."
+    },
+    {
+        "characterType": "The Zealous Competitor",
+        "description": "Always trying to be the best at everything. Their competitive spirit and determination often lead to humorous situations when they take things too seriously.",
+        "id": 17
+    },
+    {
+        "characterType": "Kotek",
+        "description": "Big boss.",
+        "id": 18
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "sex": "Male",
+        "character": 1,
+        "sounds": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jane",
+        "sex": "Female",
+        "character": 3,
+        "sounds": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Alice",
+        "sex": "Female",
+        "character": 5,
+        "sounds": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Bob",
+        "sex": "Male",
+        "character": 7,
+        "sounds": [
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "name": "Los Agierros",
+        "sex": "Male",
+        "character": "Protagonist",
+        "sounds": [
+            1,
+            2,
+            3
+        ],
+        "id": 5
+    },
+    {
+        "name": "Los Agierrosx",
+        "sex": "Male",
+        "character": "Big boss",
+        "sounds": [
+            1,
+            2,
+            3
+        ],
+        "id": 6
+    }
+]

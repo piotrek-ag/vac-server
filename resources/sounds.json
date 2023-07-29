@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "path": "/sounds/sound1.mp3",
+        "occasion": "dock_out",
+        "line": "See you later, alligator!"
+    },
+    {
+        "id": 2,
+        "path": "/sounds/sound2.mp3",
+        "occasion": "random",
+        "line": "What a wonderful day!"
+    },
+    {
+        "id": 3,
+        "path": "/sounds/sound3.mp3",
+        "occasion": "bump",
+        "line": "Oops, my bad!"
+    },
+    {
+        "id": 4,
+        "path": "/sounds/sound4.mp3",
+        "occasion": "dock_in",
+        "line": "Home sweet home!"
+    },
+    {
+        "id": 5,
+        "path": "/sounds/sound5.mp3",
+        "occasion": "dock_out",
+        "line": "Off to new adventures!"
+    },
+    {
+        "id": 6,
+        "path": "/sounds/sound6.mp3",
+        "occasion": "random",
+        "line": "I'm feeling lucky today!"
+    },
+    {
+        "id": 7,
+        "path": "/sounds/sound7.mp3",
+        "occasion": "bump",
+        "line": "Watch where you're going!"
+    },
+    {
+        "id": 8,
+        "path": "/sounds/sound8.mp3",
+        "occasion": "dock_in",
+        "line": "Back and ready for a break!"
+    }
+]
