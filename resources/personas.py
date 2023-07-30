@@ -21,6 +21,13 @@ class Persona(Resource):
     def post(self):
         personas = get_personas()
         persona = request.get_json()
+
+        if 'name' not in persona:
+            return {"error": "The 'name' field is missing from the request"}, 400
+
+        if 'character' not in persona:
+            return {"error": "The 'character' field is missing from the request"}, 400
+
         persona['id'] = generate_id(personas)
 
         persona['sounds'] = []

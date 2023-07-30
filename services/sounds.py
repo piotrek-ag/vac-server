@@ -1,8 +1,8 @@
 import concurrent.futures
 import json
 
-from services.elevenlabs import generate_sound
-from services.openapi import generate_lines
+from services.elevenlabs_s import generate_sound
+from services.openapi_s import generate_lines, determine_sex
 from utils.util import generate_id
 
 
@@ -22,6 +22,8 @@ def generate_line_and_sound(args):
 
 def generate_lines_and_sounds(persona):
     occasions = [('dock_in', 1), ('dock_out', 1), ('random', 7), ('bump', 7)]
+    if 'sex' not in persona:
+        persona['sex'] = determine_sex(persona['name'])
     with concurrent.futures.ThreadPoolExecutor() as executor:
         results = executor.map(generate_line_and_sound, [(persona['character'], occ, num) for occ, num in occasions])
 

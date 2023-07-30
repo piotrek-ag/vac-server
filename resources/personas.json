@@ -53,14 +53,10 @@
         "id": 5
     },
     {
-        "name": "Los Agierrosx",
-        "sex": "Male",
-        "character": "Big boss",
-        "sounds": [
-            1,
-            2,
-            3
-        ],
-        "id": 6
+        "name": "Peter",
+        "character": 5,
+        "id": 6,
+        "sounds": [],
+        "sex": "male"
     }
 ]
