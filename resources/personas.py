@@ -1,8 +1,8 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 
-from services.personas import get_personas, save_personas
-from services.sounds import generate_lines_and_sounds
+from services.personas_s import get_personas, save_personas
+from services.sounds_s import generate_lines_and_sounds
 from utils.util import generate_id
 
 app = Flask(__name__)

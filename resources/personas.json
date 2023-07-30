@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "John",
-        "sex": "Male",
+        "gender": "Male",
         "character": 1,
         "sounds": [
             1,
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "Jane",
-        "sex": "Female",
+        "gender": "Female",
         "character": 3,
         "sounds": [
             4,
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "Alice",
-        "sex": "Female",
+        "gender": "Female",
         "character": 5,
         "sounds": [
             7
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "name": "Bob",
-        "sex": "Male",
+        "gender": "Male",
         "character": 7,
         "sounds": [
             10,
@@ -43,7 +43,7 @@
     },
     {
         "name": "Los Agierros",
-        "sex": "Male",
+        "gender": "Male",
         "character": "Protagonist",
         "sounds": [
             1,
@@ -57,6 +57,30 @@
         "character": 5,
         "id": 6,
         "sounds": [],
-        "sex": "male"
+        "gender": "male"
+    },
+    {
+        "name": "Alice",
+        "character": 3,
+        "id": 7,
+        "sounds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "gender": "female"
     }
 ]

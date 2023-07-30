@@ -1,50 +1,98 @@
 [
     {
-        "id": 1,
-        "path": "/sounds/sound1.mp3",
-        "occasion": "dock_out",
-        "line": "See you later, alligator!"
-    },
-    {
-        "id": 2,
-        "path": "/sounds/sound2.mp3",
-        "occasion": "random",
-        "line": "What a wonderful day!"
-    },
-    {
-        "id": 3,
-        "path": "/sounds/sound3.mp3",
-        "occasion": "bump",
-        "line": "Oops, my bad!"
-    },
-    {
-        "id": 4,
-        "path": "/sounds/sound4.mp3",
         "occasion": "dock_in",
-        "line": "Home sweet home!"
+        "line": "Oh, sorry about that! Didn't mean to bump into anything. Just trying to squeeze through here.",
+        "path": "assets/zpp1lg0v9.mp3",
+        "id": 1
     },
     {
-        "id": 5,
-        "path": "/sounds/sound5.mp3",
         "occasion": "dock_out",
-        "line": "Off to new adventures!"
+        "line": "Oh boy, here I go again! Watch out for the giant stumbling out of the charging station!",
+        "path": "assets/pqqsbd41q.mp3",
+        "id": 2
     },
     {
-        "id": 6,
-        "path": "/sounds/sound6.mp3",
         "occasion": "random",
-        "line": "I'm feeling lucky today!"
+        "line": "Oh no, sorry about that! I didn't mean to knock that over.",
+        "path": "assets/gctw54t0z.mp3",
+        "id": 3
     },
     {
-        "id": 7,
-        "path": "/sounds/sound7.mp3",
-        "occasion": "bump",
-        "line": "Watch where you're going!"
+        "occasion": "random",
+        "line": "Oops, my bad! I didn't see that coming.",
+        "path": "assets/hi6vtzsta.mp3",
+        "id": 4
     },
     {
-        "path": "/sounds/sound8.mp3",
-        "occasion": "dock_in",
-        "line": "Back and ready for a break!",
+        "occasion": "random",
+        "line": "Watch out, clumsy giant coming through!",
+        "path": "assets/9fpypp70x.mp3",
+        "id": 5
+    },
+    {
+        "occasion": "random",
+        "line": "Whoops, I tripped again. I really need to work on my coordination.",
+        "path": "assets/6zq6gnemd.mp3",
+        "id": 6
+    },
+    {
+        "occasion": "random",
+        "line": "Sorry for the mess, I didn't mean to step on that.",
+        "path": "assets/02mpks7q0.mp3",
+        "id": 7
+    },
+    {
+        "occasion": "random",
+        "line": "Oops, I didn't realize I was too big for this space.",
+        "path": "assets/1n84gr4gt.mp3",
         "id": 8
+    },
+    {
+        "occasion": "random",
+        "line": "Sorry, I didn't mean to bump into you. I'm just a bit clumsy.",
+        "path": "assets/3haej268g.mp3",
+        "id": 9
+    },
+    {
+        "occasion": "bump",
+        "line": "Oh, sorry about that! I didn't mean to bump into you.",
+        "path": "assets/eit8m1vk8.mp3",
+        "id": 10
+    },
+    {
+        "occasion": "bump",
+        "line": "Oops! My apologies for the collision, I'm just a bit clumsy.",
+        "path": "assets/4gxebr56o.mp3",
+        "id": 11
+    },
+    {
+        "occasion": "bump",
+        "line": "Watch out, I'm a giant with two left feet!",
+        "path": "assets/t8zy5n3wq.mp3",
+        "id": 12
+    },
+    {
+        "occasion": "bump",
+        "line": "Oopsie daisy! My big size sometimes gets in the way.",
+        "path": "assets/dn7xkekdt.mp3",
+        "id": 13
+    },
+    {
+        "occasion": "bump",
+        "line": "Sorry for the bump, I'm still learning how to navigate without knocking things over.",
+        "path": "assets/wsbe6y3xe.mp3",
+        "id": 14
+    },
+    {
+        "occasion": "bump",
+        "line": "Whoops! My giant feet got in the way again.",
+        "path": "assets/7drtk9pzm.mp3",
+        "id": 15
+    },
+    {
+        "occasion": "bump",
+        "line": "Sorry, I'm a bit of a bull in a china shop.",
+        "path": "assets/3q1dn48f8.mp3",
+        "id": 16
     }
 ]

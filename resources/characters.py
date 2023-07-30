@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 
-from services.characters import get_characters, save_characters
+from services.characters_s import get_character_by_id, get_characters, save_characters
 from utils.util import generate_id
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ class Character(Resource):
     def get(self, id=None):
         if id is None:
             return {'error': 'No id provided'}, 400
-        character = next((c for c in get_characters() if c['id'] == id), None)
+        character = get_character_by_id(id)
         if character is None:
             return {'error': 'Character not found'}, 404
         return character
@@ -27,7 +27,7 @@ class Character(Resource):
 
     def put(self, id):
         characters = get_characters()
-        character = next((c for c in characters if c['id'] == id), None)
+        character = get_character_by_id(id)
         if character is None:
             return {'error': 'Character not found'}, 404
         update = request.get_json()
