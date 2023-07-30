@@ -1,18 +1,12 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
+
+from services.characters import get_characters, save_characters
 from utils.util import generate_id
-import json
 
 app = Flask(__name__)
 api = Api(app)
 
-def get_characters():
-    with open('resources/characters.json') as f:
-        return json.load(f)
-
-def save_characters(characters):
-    with open('resources/characters.json', 'w') as f:
-        json.dump(characters, f, indent=4)
 
 class Character(Resource):
     def get(self, id=None):
@@ -46,9 +40,7 @@ class Character(Resource):
         save_characters(characters)
         return {'result': 'Character deleted'}
 
+
 class AllCharacters(Resource):
     def get(self):
-        # Load characters from JSON file
-        with open('resources/characters.json') as f:
-            characters = json.load(f)
-        return characters
+        return get_characters()

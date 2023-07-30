@@ -42,9 +42,9 @@
         "line": "Watch where you're going!"
     },
     {
-        "id": 8,
         "path": "/sounds/sound8.mp3",
         "occasion": "dock_in",
-        "line": "Back and ready for a break!"
+        "line": "Back and ready for a break!",
+        "id": 8
     }
 ]

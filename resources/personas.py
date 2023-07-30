@@ -1,18 +1,13 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
+
+from services.personas import get_personas, save_personas
+from services.sounds import generate_lines_and_sounds
 from utils.util import generate_id
-import json
 
 app = Flask(__name__)
 api = Api(app)
 
-def get_personas():
-    with open('resources/personas.json') as f:
-        return json.load(f)
-
-def save_personas(characters):
-    with open('resources/personas.json', 'w') as f:
-        json.dump(characters, f, indent=4)
 
 class Persona(Resource):
     def get(self, id=None):
@@ -27,6 +22,10 @@ class Persona(Resource):
         personas = get_personas()
         persona = request.get_json()
         persona['id'] = generate_id(personas)
+
+        persona['sounds'] = []
+        persona = generate_lines_and_sounds(persona)
+
         personas.append(persona)
         save_personas(personas)
         return persona, 201
@@ -37,6 +36,10 @@ class Persona(Resource):
         if persona is None:
             return {'error': 'Persona not found'}, 404
         update = request.get_json()
+
+        # openapi call to populate sounds.line
+        # elevenlabs call to populate sounds
+
         persona.update(update)
         save_personas(personas)
         return persona
@@ -46,9 +49,7 @@ class Persona(Resource):
         save_personas(personas)
         return {'result': 'Persona deleted'}
 
+
 class AllPersonas(Resource):
     def get(self):
-        # Load characters from JSON file
-        with open('resources/personas.json') as f:
-            personas = json.load(f)
-        return personas
+        return get_personas()

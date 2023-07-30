@@ -1,18 +1,15 @@
+import json
+
 from flask import Flask, request
 from flask_restful import Resource, Api
+
+from services.personas import get_personas, save_personas
+from services.sounds import get_sounds, save_sounds
 from utils.util import generate_id
-import json
 
 app = Flask(__name__)
 api = Api(app)
 
-def get_sounds():
-    with open('resources/sounds.json') as f:
-        return json.load(f)
-
-def save_sounds(characters):
-    with open('resources/sounds.json', 'w') as f:
-        json.dump(characters, f, indent=4)
 
 class Sound(Resource):
     def get(self, id):
@@ -44,7 +41,13 @@ class Sound(Resource):
     def delete(self, id):
         sounds = [p for p in get_sounds() if p['id'] != id]
         save_sounds(sounds)
+        # Remove the sound ID from all personas
+        personas = get_personas()
+        for persona in personas:
+            persona['sounds'] = [sound_id for sound_id in persona['sounds'] if sound_id != id]
+        save_personas(personas)
         return {'result': 'Sound deleted'}
+
 
 class AllSounds(Resource):
     def get(self):
