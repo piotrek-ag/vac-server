@@ -42,18 +42,6 @@
         "id": 7
     },
     {
-        "occasion": "random",
-        "line": "Oops, I didn't realize I was too big for this space.",
-        "path": "assets/1n84gr4gt.mp3",
-        "id": 8
-    },
-    {
-        "occasion": "random",
-        "line": "Sorry, I didn't mean to bump into you. I'm just a bit clumsy.",
-        "path": "assets/3haej268g.mp3",
-        "id": 9
-    },
-    {
         "occasion": "bump",
         "line": "Oh, sorry about that! I didn't mean to bump into you.",
         "path": "assets/eit8m1vk8.mp3",
@@ -94,5 +82,101 @@
         "line": "Sorry, I'm a bit of a bull in a china shop.",
         "path": "assets/3q1dn48f8.mp3",
         "id": 16
+    },
+    {
+        "occasion": "dock_in",
+        "line": "Oh, hello there! Just docking in to recharge my creative energy. Who knows what wacky invention I'll come up with next!",
+        "path": "assets/unws822cf.mp3",
+        "id": 17
+    },
+    {
+        "occasion": "dock_out",
+        "line": "Oh, my dear contraption! Off we go on another adventure!",
+        "path": "assets/r7wmpxbeg.mp3",
+        "id": 18
+    },
+    {
+        "occasion": "random",
+        "line": "Oh, my dear contraption! What have you done this time?\"",
+        "path": "assets/ofe13isj4.mp3",
+        "id": 19
+    },
+    {
+        "occasion": "random",
+        "line": "Ah, another unexpected twist in the tale of my marvelous creation!\"",
+        "path": "assets/dws9p6pk1.mp3",
+        "id": 20
+    },
+    {
+        "occasion": "random",
+        "line": "Goodness gracious! I never anticipated such a delightful mishap!\"",
+        "path": "assets/tt1up58ls.mp3",
+        "id": 21
+    },
+    {
+        "occasion": "random",
+        "line": "Ha! My invention has a mind of its own, it seems!\"",
+        "path": "assets/fsu81ao4p.mp3",
+        "id": 22
+    },
+    {
+        "occasion": "random",
+        "line": "Well, well, well! Who would have thought my contraption could do that?\"",
+        "path": "assets/6xwwjc4ci.mp3",
+        "id": 23
+    },
+    {
+        "occasion": "random",
+        "line": "Ah, the joys of being an inventor - surprises at every turn!\"",
+        "path": "assets/rpr0rdaqr.mp3",
+        "id": 24
+    },
+    {
+        "occasion": "random",
+        "line": "Marvelous! My invention has just taken a whimsical detour!",
+        "path": "assets/6asub691u.mp3",
+        "id": 25
+    },
+    {
+        "occasion": "bump",
+        "line": "Oh dear, it seems my latest invention didn't account for bumps! What a delightful surprise!\"",
+        "path": "assets/n8j790kkk.mp3",
+        "id": 26
+    },
+    {
+        "occasion": "bump",
+        "line": "Ah, a bump! Just the inspiration I needed for my next invention. Time to get back to the drawing board!\"",
+        "path": "assets/yd2ek9l9g.mp3",
+        "id": 27
+    },
+    {
+        "occasion": "bump",
+        "line": "Well, that was unexpected! My invention must have thought it was a bumper car. Back to the tinkering table!\"",
+        "path": "assets/stjrg1mrj.mp3",
+        "id": 28
+    },
+    {
+        "occasion": "bump",
+        "line": "Whoops! Looks like my invention got a little too excited and bumped into something. Time to fix it up!\"",
+        "path": "assets/98d1w7ds0.mp3",
+        "id": 29
+    },
+    {
+        "occasion": "bump",
+        "line": "Haha! My invention just had a little collision. It's all part of the eccentric inventor's journey!\"",
+        "path": "assets/3ildcy5xi.mp3",
+        "id": 30
+    },
+    {
+        "occasion": "bump",
+        "line": "Ah, a bump! That's just the universe's way of telling me to add more cushions to my invention. Brilliant!\"",
+        "path": "assets/nv9g28iix.mp3",
+        "id": 31
+    },
+    {
+        "occasion": "bump",
+        "line": "Oops! My invention got a bit carried away and bumped into something. Time to make some adjustments!",
+        "path": "assets/rr81x4b85.mp3",
+        "id": 32
     }
 ]

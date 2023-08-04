@@ -44,3 +44,10 @@ def generate_random_filename():
     characters = string.ascii_lowercase + string.digits
     random_filename = ''.join(random.choice(characters) for _ in range(9))
     return random_filename + '.mp3'
+
+
+def filter_voices_by_gender(voices, gender):
+    # filter voices by gender
+    filtered_voices = [voice for voice in voices if voice.get('labels').get('gender') == gender]
+
+    return filtered_voices

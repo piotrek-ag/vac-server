@@ -6,7 +6,7 @@ import random
 from services.characters_s import get_character_by_id
 from services.elevenlabs_s import text_to_speech, get_voices
 from services.openapi_s import generate_lines, determine_gender
-from utils.util import convert_to_double_quotes, find_highest_id, flatten_list, generate_random_filename
+from utils.util import convert_to_double_quotes, find_highest_id, flatten_list, generate_random_filename, filter_voices_by_gender
 
 
 def generate_lines_and_sounds(persona):
@@ -21,11 +21,11 @@ def generate_lines_and_sounds(persona):
     results_without_sound_file = flatten_list(results_without_sound_file)
 
     voices = get_voices()
-    voices = filter_by_gender(voices, persona['gender'])
+    voices = filter_voices_by_gender(voices, persona['gender'])
     voice = random.choice(voices)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        results_with_sound_file = list(executor.map(generate_sound_file,
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        results_with_sound_file = list(executor.map(generate_audio_file,
                                                     [(res, voice['voice_id']) for res in results_without_sound_file]))
 
     sounds = get_sounds()  # Fetch existing sounds
@@ -58,7 +58,7 @@ def generate_new_sounds(args):
     return new_sounds
 
 
-def generate_sound_file(args):
+def generate_audio_file(args):
     sound, voice = args
 
     # Call the API and get the sound file
@@ -67,19 +67,12 @@ def generate_sound_file(args):
 
     # Save the sound file in memory and get the path
     # Please replace this with the actual file operation
-    path = save_sound_file_to_memory(sound_file)
+    path = save_audio_file_to_memory(sound_file)
     sound['path'] = path
     return sound
 
 
-def filter_by_gender(voices, gender):
-    # filter voices by gender
-    filtered_voices = [voice for voice in voices if voice.get('labels').get('gender') == gender]
-
-    return filtered_voices
-
-
-def save_sound_file_to_memory(sound_file):
+def save_audio_file_to_memory(audio_file):
     # Placeholder for the file operation
     # Replace this with the actual file operation
     if not os.path.exists('assets/'):
@@ -87,7 +80,7 @@ def save_sound_file_to_memory(sound_file):
 
     sound_file_path = "assets/" + generate_random_filename()
     with open(sound_file_path, "wb") as file:
-        file.write(sound_file)
+        file.write(audio_file)
     return sound_file_path
 
 

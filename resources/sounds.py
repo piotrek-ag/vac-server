@@ -1,4 +1,5 @@
 import json
+import os
 
 from flask import Flask, request
 from flask_restful import Resource, Api
@@ -40,7 +41,20 @@ class Sound(Resource):
 
     def delete(self, id):
         sounds = [p for p in get_sounds() if p['id'] != id]
+
+        # Get the sound to be deleted
+        sound_to_delete = next((sound for sound in get_sounds() if sound['id'] == id), None)
+
+        if sound_to_delete is not None:
+            file_path = sound_to_delete['path']
+            # Check if the file exists and delete it
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+            else:
+                raise FileNotFoundError(f"No such file or directory: '{file_path}'")
+
         save_sounds(sounds)
+
         # Remove the sound ID from all personas
         personas = get_personas()
         for persona in personas:

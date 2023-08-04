@@ -1,10 +1,5 @@
 [
     {
-        "id": 1,
-        "characterType": "The Eccentric Inventor",
-        "description": "Always coming up with strange and wonderful inventions, often with unintended and humorous results."
-    },
-    {
         "id": 2,
         "characterType": "The Sassy Sidekick",
         "description": "Always has a witty one-liner or a sarcastic comment ready to lighten the mood or add a bit of humor to the situation."
@@ -88,5 +83,10 @@
         "characterType": "Kotek",
         "description": "Big boss.",
         "id": 18
+    },
+    {
+        "characterType": "The Eccentric Inventor",
+        "description": "Always coming up with strange and wonderful inventions, often with unintended and humorous results.",
+        "id": 19
     }
 ]
