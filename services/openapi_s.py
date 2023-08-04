@@ -1,6 +1,5 @@
 import os
 
-from utils.util import convert_to_double_quotes
 import openai
 
 api_key = os.environ['OPENAI_API_KEY']

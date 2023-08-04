@@ -11,7 +11,7 @@ from utils.util import convert_to_double_quotes, find_highest_id, flatten_list, 
 
 def generate_lines_and_sounds(persona):
     if 'gender' not in persona:
-        persona['gender'] = determine_gender(persona['name'])
+        persona['gender'] = determine_gender(persona['name']) # refactor to persona creation
 
     occasions = [('dock_in', 1), ('dock_out', 1), ('random', 7), ('bump', 7)]
     with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -20,12 +20,13 @@ def generate_lines_and_sounds(persona):
 
     results_without_sound_file = flatten_list(results_without_sound_file)
 
+    #refactor to persona creation
     voices = get_voices()
     voices = filter_voices_by_gender(voices, persona['gender'])
     voice = random.choice(voices)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        results_with_sound_file = list(executor.map(generate_audio_file,
+        results_with_sound_file = list(executor.map(create_or_update_audio_file,
                                                     [(res, voice['voice_id']) for res in results_without_sound_file]))
 
     sounds = get_sounds()  # Fetch existing sounds
@@ -58,8 +59,12 @@ def generate_new_sounds(args):
     return new_sounds
 
 
-def generate_audio_file(args):
+def create_or_update_audio_file(args):
     sound, voice = args
+
+    # If the sound has a 'path' field, delete the file at this path
+    if 'path' in sound:
+        remove_audio_file_from_disk(sound['path'])
 
     # Call the API and get the sound file
     # Please replace this with the actual API call
@@ -67,12 +72,12 @@ def generate_audio_file(args):
 
     # Save the sound file in memory and get the path
     # Please replace this with the actual file operation
-    path = save_audio_file_to_memory(sound_file)
+    path = save_audio_file_to_disk(sound_file)
     sound['path'] = path
     return sound
 
 
-def save_audio_file_to_memory(audio_file):
+def save_audio_file_to_disk(audio_file):
     # Placeholder for the file operation
     # Replace this with the actual file operation
     if not os.path.exists('assets/'):
@@ -83,6 +88,12 @@ def save_audio_file_to_memory(audio_file):
         file.write(audio_file)
     return sound_file_path
 
+def remove_audio_file_from_disk(file_path):
+    # Check if the file exists
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+    else:
+        raise FileNotFoundError(f"No such file or directory: '{file_path}'")
 
 def get_sounds():
     with open('resources/sounds.json') as f:

@@ -8,7 +8,8 @@
             1,
             2,
             3
-        ]
+        ],
+        "voice": "wViXBPUzp2ZZixB1xQuM"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
             4,
             5,
             6
-        ]
+        ],
+        "voice": "piTKgcLEGmPE4e6mEKli"
     },
     {
         "id": 3,
@@ -28,7 +30,8 @@
         "character": 5,
         "sounds": [
             7
-        ]
+        ],
+        "voice": "pMsXgVXv3BLzUgSXRplE"
     },
     {
         "id": 4,
@@ -39,7 +42,8 @@
             10,
             11,
             12
-        ]
+        ],
+        "voice": "pNInz6obpgDQGcFmaJgB"
     },
     {
         "name": "Los Agierros",
@@ -50,14 +54,16 @@
             2,
             3
         ],
-        "id": 5
+        "id": 5,
+        "voice": "onwK4e9ZLuTAKqWW03F9"
     },
     {
         "name": "Peter",
         "character": 5,
         "id": 6,
         "sounds": [],
-        "gender": "male"
+        "gender": "male",
+        "voice": "onwK4e9ZLuTAKqWW03F9"
     },
     {
         "name": "Alice",
@@ -79,7 +85,8 @@
             15,
             16
         ],
-        "gender": "female"
+        "gender": "female",
+        "voice": "jsCqWAovK2LkecY7zXl4"
     },
     {
         "name": "James",
@@ -103,6 +110,7 @@
             31,
             32
         ],
-        "gender": "male"
+        "gender": "male",
+        "voice": "flq6f7yk4E4fJM5XTYuZ"
     }
 ]
