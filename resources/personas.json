@@ -1,17 +1,5 @@
 [
     {
-        "id": 1,
-        "name": "John",
-        "gender": "Male",
-        "character": 1,
-        "sounds": [
-            1,
-            2,
-            3
-        ],
-        "voice": "wViXBPUzp2ZZixB1xQuM"
-    },
-    {
         "id": 2,
         "name": "Jane",
         "gender": "Female",

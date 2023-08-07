@@ -1,23 +1,5 @@
 [
     {
-        "occasion": "dock_in",
-        "line": "Oh, sorry about that! Didn't mean to bump into anything. Just trying to squeeze through here.",
-        "path": "assets/zpp1lg0v9.mp3",
-        "id": 1
-    },
-    {
-        "occasion": "dock_out",
-        "line": "Oh boy, here I go again! Watch out for the giant stumbling out of the charging station!",
-        "path": "assets/pqqsbd41q.mp3",
-        "id": 2
-    },
-    {
-        "occasion": "random",
-        "line": "Oh no, sorry about that! I didn't mean to knock that over.",
-        "path": "assets/gctw54t0z.mp3",
-        "id": 3
-    },
-    {
         "occasion": "random",
         "line": "Oops, my bad! I didn't see that coming.",
         "path": "assets/hi6vtzsta.mp3",
